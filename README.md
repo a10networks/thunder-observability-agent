@@ -36,11 +36,11 @@
 	12. Total Session Count
 	13. Packet Rate (per seconds) [Since ACOS 6.0.0]
 	14. Packet Drop Rate (per seconds) [Since ACOS 6.0.0]
-	    For detailed information, please refer https://github.com/a10networks/thunder-observability-agent/TOA_100_USER_GUIDE.pdf 
+	    For detailed information, please refer [/TOA_100_USER_GUIDE.pdf] 
 
 ### Supported Thunder vADC Performance Logs
 	- SysLogs.
-	  For detailed information, please refer https://github.com/a10networks/thunder-observability-agent/TOA_100_USER_GUIDE.pdf 
+	  For detailed information, please refer [/TOA_100_USER_GUIDE.pdf] 
 	
 ### Supported Monitoring Platforms
 	1. AWS.
@@ -71,7 +71,7 @@
 	3. Docker Container [Kubernetes manifest].
 		Download from [/dist/kubernetes]
 	
-	For detailed installation and configuration steps, please refer https://github.com/a10networks/thunder-observability-agent/TOA_100_USER_GUIDE.pdf 
+	For detailed installation and configuration steps, please refer [/TOA_100_USER_GUIDE.pdf] 
 
 ### License 
 	"THUNDER OBSERVABILITY AGENT END USER SOFTWARE LICENSE AGREEMENT"
@@ -83,7 +83,7 @@
 	For more information, please refer [/OPEN-SOURCE-DISCLAIMER.pdf]
 
 ### Examples
-	For more information please refer https://github.com/a10networks/thunder-observability-agent/examples
+	For more information please refer [/examples]
 	
 ### Support Subscription
 	Please contact support@a10networks.com
