@@ -1,0 +1,5 @@
+{
+  "aws_provider": 1,
+  "aws_log": 1,
+  "aws_log_group_name": "Thunder"
+  }

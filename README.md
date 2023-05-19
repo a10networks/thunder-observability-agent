@@ -74,16 +74,37 @@
 	For detailed installation and configuration steps, please refer [/TOA_100_USER_GUIDE.pdf] 
 
 ### License 
-	"THUNDER OBSERVABILITY AGENT END USER SOFTWARE LICENSE AGREEMENT"
-	For more information please check [/LICENSE.pdf]
-	
-	All rights reserved @A10Networks Inc.
+<a href="https://www.a10networks.com/wp-content/uploads/EULA_Thunder_Observability_Agent.pdf">THUNDER OBSERVABILITY AGENT END USER SOFTWARE LICENSE AGREEMENT</a>.
+
+All rights reserved @A10 Networks Inc.
 
 ### Open Source Disclaimer
 	For more information, please refer [/OPEN-SOURCE-DISCLAIMER.pdf]
 
 ### Examples
-	For more information please refer [/examples]
+	
+	VMware	Platform: 
+	UC_01	  Collect metrics and logs from thunder/thunders running in vmware environment and publish it into vmware-vrops and vmware-vrli.
+	UC_02	: Collect logs from thunder/thunders running in vmware environment and publish it into vmware-vrli.
+	UC_03	: Collect metrics from thunder/thunders running in vmware environment and publish it into vmware-vrops.
+	UC_04	: Collect logs from thunder/thunders running in vmware environment and publish it into aws-cloudwatch.
+	UC_05	: Collect logs from thunder/thunders running in vmware environment and publish it into azure-log-workspace.
+	
+	Azure Cloud:
+	UC_01	: Collect metrics and logs from thunder/thunders running in azure environment and publish it into azure-application-insights and azure-log-analytics-workspace.
+	UC_02	: Collect logs from thunder/thunders running in azure environment and publish it into azure-log-analytics-workspace.
+	UC_03	: Collect metrics from thunder/thunders running in azure environment and publish it into azure-application-insights.
+	UC_04	: Collect logs from thunder/thunders running in azure environment and publish it into vmware-vrli.
+	UC_05	: Collect logs from thunder/thunders running in azure environment and publish it into aws-cloudwatch.
+	  
+	AWS Cloud:	 
+	UC_01	: Collect metrics and logs from thunder/thunders running in aws environment and publish it into aws-cloudwatch.
+	UC_02	: Collect only logs of thunder/thunders running in aws environment and publish it into aws-cloudwatch.
+	UC_03	: Collect only metrics of thunder/thunders running in aws environment and publish it into aws-cloudwatch.
+	UC_04	: Collect only logs of thunder/thunders running in aws environment and publish it into vmware-vrli.
+	UC_05	: Collect only logs of thunder/thunders running in aws environment and publish it into azure-log-analytics-workspace.
+	
+	For detail description and sample configuration files, please refer [/examples].
 	
 ### Support Subscription
 	Please contact support@a10networks.com

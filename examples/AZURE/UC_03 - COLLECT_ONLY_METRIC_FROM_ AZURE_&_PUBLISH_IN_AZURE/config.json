@@ -1,0 +1,19 @@
+{
+  "azure_provider": 1,
+  "azure_metric": 1,
+  "azure_metric_resource_id": "/subscriptions/07d34b9b-61e3-475a-abbc-00EXAMPLE/resourceGroups/vth-rg-example/providers/microsoft.insights/components/vth-app-insights-example",
+  "azure_cpu": 1,
+  "azure_memory": 1,
+  "azure_disk": 1,
+  "azure_throughput": 1,
+  "azure_interfaces": 1,
+  "azure_cps": 1,
+  "azure_tps": 1,
+  "azure_server_down_count": 1,
+  "azure_server_down_percentage": 1,
+  "azure_ssl_cert": 1,
+  "azure_server_error": 1,
+  "azure_sessions": 1,
+  "azure_packet_rate": 1,
+  "azure_packet_drop": 1
+  }

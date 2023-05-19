@@ -1,0 +1,5 @@
+{
+  "vmware_provider": 1,
+  "vmware_log": 1,
+  "vmware_vrli_host": "10.67.4.15:9543"
+}
