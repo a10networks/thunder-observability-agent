@@ -54,11 +54,12 @@
 
 
 ### Supported A10 Thunder ADC Versions
-	64-bit Advanced Core OS (ACOS) version 6.0.0-p2, build 22.
-	64-bit Advanced Core OS (ACOS) version 6.0.0-p1, build 47.
-	64-bit Advanced Core OS (ACOS) version 5.2.1-P7, build 47.
-	64-bit Advanced Core OS (ACOS) version 5.2.1-p6, build 74.
-	64-bit Advanced Core OS (ACOS) version 5.2.1-p5, build 114.
+	64-bit Advanced Core OS (ACOS) version 6.0.0-p2,  build 22.
+	64-bit Advanced Core OS (ACOS) version 6.0.0-p1,  build 47.
+	64-bit Advanced Core OS (ACOS) version 5.2.1-P7,  build 47.
+	64-bit Advanced Core OS (ACOS) version 5.2.1-p6,  build 74.
+	64-bit Advanced Core OS (ACOS) version 5.2.1-p5,  build 114.
+	64-bit Advanced Core OS (ACOS) version 4.1.4-GR1, build 34
 
 ### Supported Installation Options
 	1. Python Plugin. [Online]
