@@ -1,0 +1,19 @@
+{
+  "aws_provider": 1,
+  "aws_metric": 1,
+  "aws_metric_namespace": "Thunder",
+  "aws_cpu": 1,
+  "aws_memory": 1,
+  "aws_disk": 1,
+  "aws_throughput": 1,
+  "aws_interfaces": 1,
+  "aws_cps": 1,
+  "aws_tps": 1,
+  "aws_server_down_count": 1,
+  "aws_server_down_percentage": 1,
+  "aws_ssl_cert": 1,
+  "aws_server_error": 1,
+  "aws_sessions": 1,
+  "aws_packet_rate": 1,
+  "aws_packet_drop": 1
+}

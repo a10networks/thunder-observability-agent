@@ -1,0 +1,21 @@
+{
+  "vmware_provider": 1,
+  "vmware_metric": 1,
+  "vmware_cpu": 1,
+  "vmware_memory": 1,
+  "vmware_disk": 1,
+  "vmware_throughput": 1,
+  "vmware_interfaces": 1,
+  "vmware_cps": 1,
+  "vmware_tps": 1,
+  "vmware_server_down_count": 1,
+  "vmware_server_down_percentage": 1,
+  "vmware_ssl_cert": 1,
+  "vmware_server_error": 1,
+  "vmware_sessions": 1,
+  "vmware_packet_rate": 1,
+  "vmware_packet_drop": 1,
+  "vmware_log": 1,
+  "vmware_vrops_host": "10.67.4.13",
+  "vmware_vrli_host": "10.67.4.15:9543"
+}

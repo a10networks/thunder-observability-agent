@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: thunder-observability-agent
+  namespace: thunder-observability-agent
+spec:
+  containers:
+  - name: thunder-observability-agent
+    # note tag of latest not to be used
+    image: docker.io/dlohia/thunder-observability-agent:1.0.0
+    # image: docker.io/a10networks/observability-agent:1.0.0
+    imagePullPolicy: Always
+    # Just spin & wait forever
+    command: [ "/bin/sh", "-c", "--" ]
+    args: [ "crontab -l | { cat; echo '*/1 * * * * /usr/local/bin/python3 /usr/local/lib/python3.10/site-packages/thunder-observability-agent/toa.py'; } | crontab -; service rsyslog start; service cron start; while true; do sleep 30; done;" ]
+    volumeMounts:
+    - mountPath: /usr/toaenv/thunder-observability-agent/main.properties
+      subPath: main.properties
+      name: main-configmap-volume
+      readOnly: true
+    - mountPath: /usr/toaenv/thunder-observability-agent/config.json
+      subPath: config.json
+      name: config-configmap-volume
+      readOnly: true
+    - mountPath: /usr/toaenv/thunder-observability-agent/logging.conf
+      subPath: logging.conf
+      name: logging-configmap-volume
+      readOnly: true
+    - mountPath: /root/.thunder/credentials
+      subPath: credentials
+      name: thunder-credentials-secret-volume
+      readOnly: true
+    - mountPath: /root/.azure/credentials
+      subPath: credentials
+      name: azure-credentials-secret-volume
+      readOnly: true
+  
+  volumes:
+  - name: thunder-credentials-secret-volume
+    secret:
+      secretName: thunder-credentials-secret
+  - name: azure-credentials-secret-volume
+    secret:
+      secretName: azure-credentials-secret
+  - name: main-configmap-volume
+    configMap:
+      name: main-configmap
+  - name: config-configmap-volume
+    configMap:
+      name: config-configmap
+  - name: logging-configmap-volume
+    configMap:
+      name: logging-configmap   
