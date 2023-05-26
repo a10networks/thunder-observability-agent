@@ -4,7 +4,7 @@
 	
 	- Collects, processes and publishes fourteen Thunder metrics. 
 	  The default data collection frequency is 1 minute. 
-	  The metrics can be published on the same platform where the Thunder instance is deployed. 
+	  The metrics can be published on the same platform where the Thunder instance is deployed.
 	  For more information on Thunder metrics, see Thunder Metric Support.
 	
 	- Collects, processes, and publishes Thunder Syslogs. 
@@ -13,7 +13,7 @@
 	  Additionally, logs can also be sent to any AWS, Azure, or VMware platforms.
 	  
 	- Manages the data collection, processing, aggregation, and publishing internally.
-	- Provides multitasking capabilities to collect and process multiple Thunder instances simultaneously.
+	- Provides multitasking capabilities to collect and process multiple Thunder instances and its partitions simultaneously. Default it collects from shared partition.
 	- Installs on any orchestration platform such as public cloud compute instances, private cloud physical or virtual machines, 	hypervisor VMs, and on-premise physical hardware and is self-driven.
 	- Supports Linux, CentOS, and Ubuntu platforms as a Python Plugin installation package and Docker containerization.
 	- Supports single or multiple Thunder instances.

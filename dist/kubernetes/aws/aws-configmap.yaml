@@ -25,7 +25,6 @@ data:
     {
       "aws_provider": 0,
       "aws_metric": 0,
-      "aws_metric_namespace": "XXXX",
       "aws_cpu": 1,
       "aws_memory": 1,
       "aws_disk": 1,

@@ -1,7 +1,6 @@
 {
   "aws_provider": 1,
   "aws_metric": 1,
-  "aws_metric_namespace": "Thunder",
   "aws_cpu": 1,
   "aws_memory": 1,
   "aws_disk": 1,
