@@ -8,8 +8,8 @@ data:
     log_collection_delay_min=0 
     cron_job_frequency_min=1
     http_ssl_verify=False
-    http_connection_timeout_sec=6
-    max_threads=200
+    http_connection_timeout_sec=15
+    max_threads=2000
     config_path=/usr/toaenv/thunder-observability-agent/config.json
     aws_credentials_path=/root/.aws/credentials
     aws_config_path=/root/.aws/config
@@ -25,7 +25,6 @@ data:
     {
       "aws_provider": 0,
       "aws_metric": 0,
-      "aws_metric_namespace": "XXXX",
       "aws_cpu": 1,
       "aws_memory": 1,
       "aws_disk": 1,
