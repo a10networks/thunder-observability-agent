@@ -1,0 +1,145 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1-1",
+      "creationTime": 1684475352568,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "d07db1b6-38d7-460b-8aae-24d05b21d973",
+      "importAttempts": 0,
+      "importComplete": true,
+      "lastUpdateTime": 1684475695060,
+      "lastUpdateUserId": "66bba442-a3da-4b81-ae6b-af5ae40fb902",
+      "locked": false,
+      "name": "Thunder-Metrics",
+      "rank": 0,
+      "shared": false,
+      "states": [{
+         "key": "permDashboardTime_dashboard_d07db1b6-38d7-460b-8aae-24d05b21d973",
+         "value": "o%3AdateRange%3Ds%253AlastHour%5EdateRangeText%3Ds%253A1H"
+      }],
+      "temporary": false,
+      "userId": "66bba442-a3da-4b81-ae6b-af5ae40fb902",
+      "widgetInteractions": [
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "42059f64-d300-4bcc-ae27-becc6aa338f0",
+            "widgetIdReceiver": "7d1a8bc3-0e5c-47ee-bd8b-2f84c0c0a539"
+         },
+         {
+            "type": "metricId",
+            "widgetIdProvider": "7d1a8bc3-0e5c-47ee-bd8b-2f84c0c0a539",
+            "widgetIdReceiver": "c532f227-1d15-4e13-a2f8-938006741ede"
+         }
+      ],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "filterMode": "tagPicker",
+               "mode": "all",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 289,
+               "relationshipMode": {"relationshipMode": 0},
+               "resource": [],
+               "selectFirstRow": {"selectFirstRow": true},
+               "selfProvider": {"selfProvider": false},
+               "tagFilter": null,
+               "title": "Object List"
+            },
+            "gridsterCoords": {
+               "h": 11,
+               "w": 4,
+               "x": 1,
+               "y": 1
+            },
+            "height": 609,
+            "id": "42059f64-d300-4bcc-ae27-becc6aa338f0",
+            "states": [{
+               "key": "permResGrid_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_42059f64-d300-4bcc-ae27-becc6aa338f0",
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A243.92596435546875%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253AresourceRating%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah47%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100"
+            }],
+            "title": "Object List",
+            "type": "ResourceList"
+         },
+         {
+            "collapsed": false,
+            "config": {},
+            "gridsterCoords": {
+               "h": 9,
+               "w": 4,
+               "x": 5,
+               "y": 1
+            },
+            "height": 494,
+            "id": "7d1a8bc3-0e5c-47ee-bd8b-2f84c0c0a539",
+            "states": [
+               {
+                  "key": "permFetchCollectingMetrics_permMetricPicker_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_7d1a8bc3-0e5c-47ee-bd8b-2f84c0c0a539",
+                  "value": "b%3A0"
+               },
+               {
+                  "key": "permFetchCommonMetrics_permMetricPicker_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_7d1a8bc3-0e5c-47ee-bd8b-2f84c0c0a539",
+                  "value": "b%3A0"
+               },
+               {
+                  "key": "permFetchPropertyMetrics_permMetricPicker_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_7d1a8bc3-0e5c-47ee-bd8b-2f84c0c0a539",
+                  "value": "b%3A0"
+               },
+               {
+                  "key": "permMetricPicker_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_7d1a8bc3-0e5c-47ee-bd8b-2f84c0c0a539",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1"
+               }
+            ],
+            "title": "Metric Picker",
+            "type": "MetricPicker"
+         },
+         {
+            "collapsed": false,
+            "config": {},
+            "gridsterCoords": {
+               "h": 12,
+               "w": 4,
+               "x": 9,
+               "y": 1
+            },
+            "height": 665,
+            "id": "c532f227-1d15-4e13-a2f8-938006741ede",
+            "states": [
+               {
+                  "key": "permBtn_pan_permMetricChart_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_c532f227-1d15-4e13-a2f8-938006741ede",
+                  "value": "b%3A0"
+               },
+               {
+                  "key": "permMetricChart_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_c532f227-1d15-4e13-a2f8-938006741ede",
+                  "value": "o%3A"
+               },
+               {
+                  "key": "permDateRange1_permMetricChart_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_c532f227-1d15-4e13-a2f8-938006741ede",
+                  "value": "s%3A%7B%22dateRange%22%3A%22dashboardTime%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D"
+               },
+               {
+                  "key": "permBtn_zoomAllGraphs_permMetricChart_widget_d07db1b6-38d7-460b-8aae-24d05b21d973_c532f227-1d15-4e13-a2f8-938006741ede",
+                  "value": "b%3A0"
+               }
+            ],
+            "title": "Metric Chart",
+            "type": "MetricChart"
+         }
+      ]
+   }],
+   "entries": {},
+   "uuid": "64147202-9d00-4005-ab0f-a179742e976e"
+}

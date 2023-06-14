@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="VMWARE" disableInBasePolicy="true" id="AlertDefinition-705a8029-e3e0-4d18-9a66-5daa5f37dbf7" name="ThunderAlert" resourceKind="VirtualMachine" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="and">
+                    <Symptom ref="SymptomDefinition-20e2ace8-3951-45bf-b0fd-0e91f3e8d571"/>
+                    <Symptom ref="SymptomDefinition-aeed7990-b6af-4456-9388-6c50bbf98e87"/>
+                </SymptomSet>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="VMWARE" disableInBasePolicy="true" id="SymptomDefinition-20e2ace8-3951-45bf-b0fd-0e91f3e8d571" name="Condition_734fd0f3-a918-48c3-82f2-301fb816ff34" resourceKind="VirtualMachine" symptomDefType="condition_self">
+            <State severity="warning">
+                <Condition key="vThunder|CPU Usage Percentage (Data)" operator="&gt;" thresholdType="static" type="metric" value="70.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="VMWARE" disableInBasePolicy="true" id="SymptomDefinition-aeed7990-b6af-4456-9388-6c50bbf98e87" name="Condition_dc75c397-7c74-4fd9-b8b0-b3929dabfa67" resourceKind="VirtualMachine" symptomDefType="condition_self">
+            <State severity="info">
+                <Condition key="vThunder|CPU Usage Percentage (Data)" operator="&gt;" thresholdType="static" type="metric" value="60.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>
