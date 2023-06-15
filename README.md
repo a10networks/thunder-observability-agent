@@ -36,7 +36,7 @@
 	For detailed installation and configuration please check documentation section.
 
 ### Documentation
-	<a href="https://documentation.a10networks.com/Install/Software/A10_ACOS_Install/html/TOA/1.0.0/Observability_Agent_Responsive_HTML5/Default.htm">A10 Documentation Site</a>.
+<a href="https://documentation.a10networks.com/Install/Software/A10_ACOS_Install/html/TOA/1.0.0/Observability_Agent_Responsive_HTML5/Default.htm">A10 Documentation Site</a>.
 	
 
 ### Supported Thunder vADC Performance Metrics
