@@ -33,8 +33,11 @@
 	2. Docker Container [Kubernetes manifest].
 		Download from [/dist/kubernetes]
 	
-	For detailed installation and configuration steps, please refer [/TOA_100_USER_GUIDE.pdf] 
-	
+	For detailed installation and configuration please check documentation section.
+
+### Documentation
+	A10 Documentation Site: https://documentation.a10networks.com/Install/Software/A10_ACOS_Install/html/TOA/1.0.0/Observability_Agent_Responsive_HTML5/Default.htm
+
 ### Supported Thunder vADC Performance Metrics
 	1.  CPU Usage Percentage (Data).
 	2.  Memory Usage Percentage.
@@ -69,8 +72,6 @@
 	64-bit Advanced Core OS (ACOS) version 5.2.1-P5,     build 114.
 	64-bit Advanced Core OS (ACOS) version 4.1.4-GR1,    build 34
 
-### Documentation
-	A10 Documentation Site: https://documentation.a10networks.com
 
 ### License 
 <a href="https://www.a10networks.com/wp-content/uploads/EULA_Thunder_Observability_Agent.pdf">THUNDER OBSERVABILITY AGENT END USER SOFTWARE LICENSE AGREEMENT</a>.
@@ -105,5 +106,5 @@ All rights reserved @A10 Networks Inc.
 	
 	For detail description and sample configuration files, please refer [/examples].
 	
-### Support Subscription
+### Support Information
 	Please contact support@a10networks.com
