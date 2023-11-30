@@ -2,7 +2,8 @@
 	The TOA is a lightweight autonomous data processing engine that can be externally installed and configured for any Thunder device.
 	TOA offers the following capabilities on Application Delivery Controller (ADC):
 	
-	- Collects, processes, and publishes 14 Thunder metrics. The default data collection frequency is 1 minute. 
+	- Collects, processes, and publishes 14 Thunder metrics. 
+ 	  The default data collection frequency is 1 minute. 
 	  Thunder metrics can be sent to the platform where Thunder is deployed, which includes AWS, Azure, and VMware or can be sent to shared platforms like Elasticsearch (Kibana), Prometheus (Grafana), and Splunk. Metrics can be sent to any one platform at a time. For more information on Thunder metrics, see Supported Thunder Metrics.
 	
 	- Collects, processes, and publishes Thunder Syslogs. 
