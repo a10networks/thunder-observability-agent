@@ -247,7 +247,7 @@
     - Company has created below AWS credentials to provide access of aws services 
         - aws_access_key_id = AKIAIOSFODNN7EXAMPLE
         - aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-        - region = us_east_1
+        - region = us-east-1
     
     - Company has below VMWARE monitoring solution details:
         - vmware_vrli_host : "10.67.4.15:9543"

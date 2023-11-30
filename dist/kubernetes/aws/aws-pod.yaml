@@ -7,8 +7,7 @@ spec:
   containers:
   - name: thunder-observability-agent
     # note tag of latest not to be used
-    image: docker.io/a10networks/thunder-observability-agent:1.0.0
-    # image: docker.io/a10networks/observability-agent:1.0.0
+    image: docker.io/a10networks/thunder-observability-agent:2.0.0
     imagePullPolicy: Always
     # Just spin & wait forever
     command: [ "/bin/sh", "-c", "--" ]
