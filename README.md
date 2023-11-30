@@ -8,7 +8,7 @@
           Metrics can be sent to any one platform at a time. For more information on Thunder metrics, see Supported Thunder Metrics.
 	
 	- Collects, processes, and publishes Thunder Syslogs.
- 	  The default data collection frequency is 1 minute. <br /> The logs can be published on various platforms like AWS, Azure, VMware, Kibana (Elasticsearch), Grafana (Prometheus and Pushgateway), or Splunk. 
+ 	  The default data collection frequency is 1 minute. The logs can be published on various platforms like AWS, Azure, VMware, Kibana (Elasticsearch), Grafana (Prometheus and Pushgateway), or Splunk. 
 	  Logs can be sent to any one platform at a time. For more information on Thunder logs, see Supported Thunder Logs.
 
 	- Manages the data collection, processing, aggregation, and publishing internally.
