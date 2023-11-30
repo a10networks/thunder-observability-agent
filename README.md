@@ -3,8 +3,7 @@
 	TOA offers the following capabilities on Application Delivery Controller (ADC):
 	
 	- Collects, processes, and publishes 14 Thunder metrics. 
- 	  The default data collection frequency is 1 minute. Thunder metrics can be sent to the platform where Thunder is deployed, which includes AWS, Azure, and VMware or can be sent to shared platforms like Elasticsearch (Kibana), Prometheus (Grafana), and Splunk. 
-          Metrics can be sent to any one platform at a time. For more information on Thunder metrics, see Supported Thunder Metrics.
+ 	  The default data collection frequency is 1 minute. Thunder metrics can be sent to the platform where Thunder is deployed, which includes AWS, Azure, and VMware or can be sent to shared platforms like Elasticsearch (Kibana), Prometheus (Grafana), and Splunk. Metrics can be sent to any one platform at a time. For more information on Thunder metrics, see Supported Thunder Metrics.
 	
 	- Collects, processes, and publishes Thunder Syslogs.
  	  The default data collection frequency is 1 minute. The logs can be published on various platforms like AWS, Azure, VMware, Kibana (Elasticsearch), Grafana (Prometheus and Pushgateway), or Splunk. 
