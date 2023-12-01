@@ -369,7 +369,7 @@
     - Company has created below AWS credentials to provide access of aws services 
         - aws_access_key_id = AKIAIOSFODNN7EXAMPLE
         - aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-        - region = us_east_1
+        - region = us-east-1
       
     - Company has below aws monitoring solution details:
         - aws_log_group_name: Thunder

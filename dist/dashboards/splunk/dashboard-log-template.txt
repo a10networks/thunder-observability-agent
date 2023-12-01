@@ -1,0 +1,137 @@
+<dashboard version="1.1" theme="light">
+  <label>Thunder-Logs</label>
+  <description>Dashboard for thunder logs</description>
+  <search id="base_search">
+    <query>index="thunder_log"| table AGENT APPNAME HOSTNAME IP JOBID LOG_TYPE PARTITION PRIORITY NAMESPACE TIME text </query>
+    <earliest>-24h@h</earliest>
+          <latest>now</latest>
+  </search>
+  <fieldset submitButton="true" autoRun="true">
+    <input type="dropdown" token="AGENT">
+      <label>Agent</label>
+       <search base="base_search">
+        <query>| stats count by AGENT</query>
+      </search>
+      <fieldForLabel>AGENT</fieldForLabel>
+      <fieldForValue>AGENT</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+    <input type="dropdown" token="APPNAME">
+      <label>Appname</label>
+       <search base="base_search">
+        <query>| stats count by APPNAME</query>
+      </search>
+      <fieldForLabel>APPNAME</fieldForLabel>
+      <fieldForValue>APPNAME</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+    <input type="dropdown" token="HOSTNAME">
+      <label>Hostname</label>
+       <search base="base_search">
+        <query>| stats count by HOSTNAME</query>
+      </search>
+      <fieldForLabel>HOSTNAME</fieldForLabel>
+      <fieldForValue>HOSTNAME</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+    <input type="dropdown" token="IP">
+      <label>IP</label>
+       <search base="base_search">
+        <query>| stats count by IP</query>
+      </search>
+      <fieldForLabel>IP</fieldForLabel>
+      <fieldForValue>IP</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+    <input type="dropdown" token="JOBID">
+      <label>JobId</label>
+       <search base="base_search">
+        <query>| stats count by JOBID</query>
+      </search>
+      <fieldForLabel>JOBID</fieldForLabel>
+      <fieldForValue>JOBID</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+     <input type="dropdown" token="NAMESPACE">
+      <label>Namespace</label>
+       <search base="base_search">
+        <query>| stats count by NAMESPACE</query>
+      </search>
+      <fieldForLabel>NAMESPACE</fieldForLabel>
+      <fieldForValue>NAMESPACE</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+     <input type="dropdown" token="PARTITION">
+      <label>Partition</label>
+       <search base="base_search">
+        <query>| stats count by PARTITION</query>
+      </search>
+      <fieldForLabel>PARTITION</fieldForLabel>
+      <fieldForValue>PARTITION</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+     <input type="dropdown" token="PRIORITY">
+      <label>Priority</label>
+       <search base="base_search">
+        <query>| stats count by PRIORITY</query>
+      </search>
+      <fieldForLabel>PRIORITY</fieldForLabel>
+      <fieldForValue>PRIORITY</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+     <input type="dropdown" token="TIME">
+      <label>Time</label>
+       <search base="base_search">
+        <query>| stats count by TIME</query>
+      </search>
+      <fieldForLabel>TIME</fieldForLabel>
+      <fieldForValue>TIME</fieldForValue>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+    </fieldset>
+     <row>
+    <panel>
+      <single>
+        <title>Total Logs</title>
+        <search base="base_search">
+          <query>| search AGENT=$AGENT$ APPNAME=$APPNAME$ HOSTNAME=$HOSTNAME$ IP=$IP$ JOBID=$JOBID$ NAMESPACE=$NAMESPACE$ PARTITION=$PARTITION$ PRIORITY=$PRIORITY$ TIME=$TIME$ |stats count</query>
+        </search>
+        <option name="colorMode">block</option>
+        <option name="drilldown">none</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0x006d9c"]</option>
+        <option name="underLabel">Log Count</option>
+        <option name="useColors">1</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Log details</title>
+        <search base="base_search">
+          <query>|search AGENT=$AGENT$ APPNAME=$APPNAME$ HOSTNAME=$HOSTNAME$ IP=$IP$  JOBID=$JOBID$ NAMESPACE=$NAMESPACE$ PARTITION=$PARTITION$ PRIORITY=$PRIORITY$ TIME=$TIME$  |table *</query>
+        </search>
+        <option name="drilldown">none</option>
+      </table>
+    </panel>
+  </row>
+    
+</dashboard>

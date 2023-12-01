@@ -1,0 +1,20 @@
+{
+  "es_provider": 1,
+  "es_metric": 1,
+  "es_cpu": 1,
+  "es_memory": 1,
+  "es_disk": 1,
+  "es_throughput": 1,
+  "es_interfaces": 1,
+  "es_cps": 1,
+  "es_tps": 1,
+  "es_server_down_count": 1,
+  "es_server_down_percentage": 1,
+  "es_ssl_cert": 1,
+  "es_server_error": 1,
+  "es_sessions": 1,
+  "es_packet_rate": 1,
+  "es_packet_drop": 1,
+  "es_log": 1,
+  "es_host": "10.64.25.143:9200"
+}

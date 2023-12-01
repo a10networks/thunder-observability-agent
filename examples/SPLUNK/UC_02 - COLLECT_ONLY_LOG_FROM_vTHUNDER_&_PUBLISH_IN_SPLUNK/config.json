@@ -1,0 +1,20 @@
+{
+  "splunk_provider": 1,
+  "splunk_metric": 0,
+  "splunk_cpu": 1,
+  "splunk_memory": 1,
+  "splunk_disk": 1,
+  "splunk_throughput": 1,
+  "splunk_interfaces": 1,
+  "splunk_cps": 1,
+  "splunk_tps": 1,
+  "splunk_server_down_count": 1,
+  "splunk_server_down_percentage": 1,
+  "splunk_ssl_cert": 1,
+  "splunk_server_error": 1,
+  "splunk_sessions": 1,
+  "splunk_packet_rate": 1,
+  "splunk_packet_drop": 1,
+  "splunk_log": 1,
+  "splunk_host": "10.64.25.143:8088"
+}

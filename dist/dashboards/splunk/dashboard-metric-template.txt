@@ -1,0 +1,171 @@
+<dashboard version="1.1" theme="light">
+  <label>Thunder-Metrics</label>
+  <description>Dashboard for thunder metrics</description>
+  <row>
+    <panel>
+      <title>Average Disk Usage</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_disk_usage_per WHERE index="thunder_metrics" metric_name="Disk Usage Percentage" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Average Memory Usage</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_memory_usage_per WHERE index="thunder_metrics" metric_name="Memory Usage Percentage" span=1m</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Average Server Errors Count</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_server_errors_count  WHERE index="thunder_metrics" metric_name="Server Errors Count" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Average Total Session Count</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_total_session_count  WHERE index="thunder_metrics" metric_name="Total Session Count" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+          <refresh>30s</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Average SSL Errors Count</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value)  as avg_ssl_errors_count  WHERE index="thunder_metrics" metric_name="SSL Errors Count" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Average Server Down Percentage</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_server_down_per  WHERE index="thunder_metrics" metric_name="Server Down Percentage" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Average Server Down Count</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_server_down_count  WHERE index="thunder_metrics" metric_name="Server Down Count" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Average Transactions Rate (Sec)</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_transactions_rate  WHERE index="thunder_metrics" metric_name="Transactions Rate (Sec)" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Average Interface Down Count (Data)</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_interface_count  WHERE index="thunder_metrics" metric_name="Interface Down Count (Data)" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Average Total New Connection (Sec)</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_total_new_connection  WHERE index="thunder_metrics" metric_name="Total New Connection (Sec)" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Average CPU Usage Percentage (Data)</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_cpu_usage_per  WHERE index="thunder_metrics" metric_name="CPU Usage Percentage (Data)" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Average Throughput Rate (Global/BPS)</title>
+      <chart>
+        <search>
+          <query>| mstats avg(_value) as avg_throughput_rate WHERE index="thunder_metrics" metric_name="Throughput Rate (Global/BPS)" span=1m</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+</dashboard>

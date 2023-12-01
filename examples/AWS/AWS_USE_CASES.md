@@ -26,7 +26,7 @@
     - Company has created below AWS credentials to provide access of aws services 
         - aws_access_key_id = AKIAIOSFODNN7EXAMPLE
         - aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-        - region = us_east_1
+        - region = us-east-1
     
     - Company has created namespace in AWS, and shared following details:
         - aws_log_group_name: Thunder
@@ -86,7 +86,7 @@
      - /root/.aws/config
       
             [default]
-            region = us_east_1
+            region = us-east-1
             output = json
     
     
@@ -118,7 +118,7 @@
     - Company has created below AWS credentials to provide access of aws services 
         - aws_access_key_id = AKIAIOSFODNN7EXAMPLE
         - aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-        - region = us_east_1
+        - region = us-east-1
     
     - Company has created log group in AWS, and shared following details:
         - aws_log_group_name: Thunder
@@ -161,7 +161,7 @@
       - /root/.aws/config
       
               [default]
-              region = us_east_1
+              region = us-east-1
               output = json
     
     
@@ -194,7 +194,7 @@
     - Company has created below AWS credentials to provide access of aws services 
         - aws_access_key_id = AKIAIOSFODNN7EXAMPLE
         - aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-        - region = us_east_1
+        - region = us-east-1
         
     - Solution : A10 support team suggested to install 'Thunder Observability Agent[TOA]' within AWS platform.
         It's pretty straight forward and super easy.
@@ -246,7 +246,7 @@
       - /root/.aws/config
       
           [default]
-          region = us_east_1
+          region = us-east-1
           output = json
     
     -- All Set ---
@@ -276,7 +276,7 @@
     - Company has created below AWS credentials to provide access of aws services 
         - aws_access_key_id = AKIAIOSFODNN7EXAMPLE
         - aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-        - region = us_east_1
+        - region = us-east-1
     
     - Company has below VMWARE monitoring solution details:
         - vmware_vrli_host : 10.67.4.15:9543
@@ -350,7 +350,7 @@
     - Company has created below AWS credentials to provide access of aws services 
         - aws_access_key_id = AKIAIOSFODNN7EXAMPLE
         - aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-        - region = us_east_1
+        - region = us-east-1
       
     - Company has below AZURE monitoring solution details:
         - azure_log_workspace_id : 3477c53b-af9e-4c9a-b3ba-e6EXAMPLE
@@ -399,7 +399,7 @@
         - /root/.aws/config
     
             [default]
-            region = us_east_1
+            region = us-east-1
             output = json
     
         - /root/.azure/credentials

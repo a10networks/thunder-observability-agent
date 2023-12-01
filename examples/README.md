@@ -20,5 +20,20 @@
 	UC_03	: Collect only metrics of thunder/thunders running in aws environment and publish it into aws-cloudwatch.
 	UC_04	: Collect only logs of thunder/thunders running in aws environment and publish it into vmware-vrli.
 	UC_05	: Collect only logs of thunder/thunders running in aws environment and publish it into azure-log-analytics-workspace.
+
+	ElasticSearch:
+	UC_01	: Collect metrics and logs from thunder/thunders and publish it into elasticsearch/kibana.
+	UC_02	: Collect only logs of thunder/thunders and publish it into elasticsearch/kibana.
+	UC_03	: Collect only metrics of thunder/thunders and publish it into elasticsearch/kibana.
+
+	Prometheus/Grafana:
+	UC_01	: Collect metrics and logs from thunder/thunders and publish it into prometheus/grafana using pushgateway.
+	UC_02	: Collect only logs of thunder/thunders and publish it into prometheus/grafana using pushgateway.
+	UC_03	: Collect only metrics of thunder/thunders and publish it into prometheus/grafana using pushgateway.
+
+	Splunk:
+	UC_01	: Collect metrics and logs from thunder/thunders and publish it into splunk.
+	UC_02	: Collect only logs of thunder/thunders and publish it into splunk.
+	UC_03	: Collect only metrics of thunder/thunders and publish it into splunk.
 	
-	More detailed description and sample configuration file, please check [/AWS, /AZURE, /VMWARE] directory.
+	More detailed description and sample configuration file, please check [/AWS, /AZURE, /VMWARE, /ELASTICSEARCH, /PROMETHEUS, /SPLUNK] directory.
