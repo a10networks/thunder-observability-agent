@@ -1,0 +1,64 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: thunder-observability-agent
+  namespace: thunder-observability-agent
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure        
+          containers:
+          - name: thunder-observability-agent
+            image: docker.io/a10networks/thunder-observability-agent:3.0.0
+            imagePullPolicy: IfNotPresent
+            command:
+            - /bin/sh
+            - -c
+            - /usr/local/bin/python3 /usr/local/lib/python3.10/site-packages/thunder-observability-agent/toa.py;
+            volumeMounts:
+            - mountPath: /usr/toaenv/thunder-observability-agent/main.properties
+              subPath: main.properties
+              name: main-configmap-volume
+              readOnly: true
+            - mountPath: /usr/toaenv/thunder-observability-agent/config.json
+              subPath: config.json
+              name: config-configmap-volume
+              readOnly: true
+            - mountPath: /usr/toaenv/thunder-observability-agent/logging.conf
+              subPath: logging.conf
+              name: logging-configmap-volume
+              readOnly: true
+            - mountPath: /root/.thunder/credentials
+              subPath: credentials
+              name: thunder-credentials-secret-volume
+              readOnly: true
+            - mountPath: /root/.gcp/credentials
+              subPath: credentials
+              name: gcp-credentials-secret-volume
+              readOnly: true
+            - mountPath: /root/gcpServiceKeyFile.json
+              subPath: gcpServiceKeyFile.json
+              name: gcp-service-key-file-secret-volume
+              readOnly: true
+          volumes:
+          - name: thunder-credentials-secret-volume
+            secret:
+              secretName: thunder-credentials-secret
+          - name: gcp-credentials-secret-volume
+            secret:
+              secretName: gcp-credentials-secret
+          - name: gcp-service-key-file-secret-volume
+            secret:
+              secretName: gcp-service-key-file-secret
+          - name: main-configmap-volume
+            configMap:
+              name: main-configmap
+          - name: config-configmap-volume
+            configMap:
+              name: config-configmap
+          - name: logging-configmap-volume
+            configMap:
+              name: logging-configmap

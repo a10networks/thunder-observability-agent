@@ -1,12 +1,12 @@
-# A10's Thunder Observability Agent (TOA) - v2.0.0
+# A10's Thunder Observability Agent (TOA) - v3.0.0
 	The TOA is a lightweight autonomous data processing engine that can be externally installed and configured for any Thunder device.
 	TOA offers the following capabilities on Application Delivery Controller (ADC):
 	
 	- Collects, processes, and publishes 14 Thunder metrics. 
- 	  The default data collection frequency is 1 minute. Thunder metrics can be sent to the platform where Thunder is deployed, which includes AWS, Azure, and VMware or can be sent to shared platforms like Elasticsearch (Kibana), Prometheus (Grafana), and Splunk. Metrics can be sent to any one platform at a time. For more information on Thunder metrics, see Supported Thunder Metrics.
+ 	  The default data collection frequency is 1 minute. Thunder metrics can be sent to the platform where Thunder is deployed, which includes AWS, Azure, and VMware or can be sent to shared platforms like Elasticsearch (Kibana), Prometheus (Grafana), Splunk, Google Cloud Platform, and Oracle Cloud Infrastructure. Metrics can be sent to any one platform at a time. For more information on Thunder metrics, see Supported Thunder Metrics.
 	
 	- Collects, processes, and publishes Thunder Syslogs.
- 	  The default data collection frequency is 1 minute. The logs can be published on various platforms like AWS, Azure, VMware, Kibana (Elasticsearch), Grafana (Prometheus and Pushgateway), or Splunk. 
+ 	  The default data collection frequency is 1 minute. The logs can be published on various platforms like AWS, Azure, VMware, Kibana (Elasticsearch), Grafana (Prometheus and Pushgateway), Splunk, Google Cloud Platform(GCP), or Oracle Cloud Infrastructure(OCI). 
 	  Logs can be sent to any one platform at a time. For more information on Thunder logs, see Supported Thunder Logs.
 
 	- Manages the data collection, processing, aggregation, and publishing internally.
@@ -17,7 +17,7 @@
 	- Supports single or multiple Thunder instances.
 	- Supports Thunder instances running under AWS autoscale group or Azure Virtual machine scale set (VMSS).
 	- Collects data from any type of Thunder device installed on public cloud compute instances, private cloud physical or virtual 	machines, hypervisor VMs and on-premise physical hardware installation.
-	- Publishes data to Azure Cloud, AWS Cloud, and VMware ESXi.
+	- Publishes data to Azure Cloud, AWS Cloud, VMware ESXi,Kibana (Elasticsearch), Grafana (Prometheus and Pushgateway), Splunk, Google Cloud Platform(GCP), or Oracle Cloud Infrastructure(OCI) .
 
 ### Supported Use Cases
 	1. Monitoring thunder adc metrics or logs or both into AWS Cloudwatch.
@@ -26,6 +26,8 @@
 	4. Monitoring thunder adc metrics or logs or both into Splunk Console.
 	5. Monitoring thunder adc metrics or logs or both into ElasticSearch/Kibana Console.
 	6. Monitoring thunder adc metrics or logs or both into Prometheus/Grafana Console using PushGateway.
+	7. Monitoring thunder adc metrics or logs or both into Google Cloud Platform (GCP).
+	8. Monitoring thunder adc metrics or logs or both into Oracle Cloud Infrastructure (OCI).
 
 ### Supported Installation Options
 	1. Python Plugin.
@@ -66,6 +68,8 @@
 	4. Splunk
 	5. ElasticSearch-Kibana
 	6. Prometheus-Grafana [PushGateway]
+	7. Google Cloud Platform (GCP)
+	8. Oracle Cloud Infrastructure (OCI)
 
 ### Supported A10 Thunder ADC Versions
 	64-bit Advanced Core OS (ACOS) version 6.0.2.
@@ -123,6 +127,16 @@ All rights reserved @A10 Networks Inc.
 	UC_01	: Collect metrics and logs from thunder/thunders and publish it into splunk.
 	UC_02	: Collect only logs of thunder/thunders and publish it into splunk.
 	UC_03	: Collect only metrics of thunder/thunders and publish it into splunk.
+
+	Google Cloud Platform (GCP):
+	UC_01	: Collect metrics and logs from thunder/thunders and publish it into gcp.
+	UC_02	: Collect only logs of thunder/thunders and publish it into gcp.
+	UC_03	: Collect only metrics of thunder/thunders and publish it into gcp.
+
+	Oracle Cloud Infrastructure (OCI):
+	UC_01	: Collect metrics and logs from thunder/thunders and publish it into oci.
+	UC_02	: Collect only logs of thunder/thunders and publish it into oci.
+	UC_03	: Collect only metrics of thunder/thunders and publish it into oci.
 
 	For detail description and sample configuration files, please refer [/examples].
 	
