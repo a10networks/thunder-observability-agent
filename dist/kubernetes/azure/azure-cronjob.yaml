@@ -12,7 +12,7 @@ spec:
           restartPolicy: OnFailure        
           containers:
           - name: thunder-observability-agent
-            image: docker.io/a10networks/thunder-observability-agent:2.0.0
+            image: docker.io/a10networks/thunder-observability-agent:3.0.0
             imagePullPolicy: IfNotPresent
             command:
             - /bin/sh

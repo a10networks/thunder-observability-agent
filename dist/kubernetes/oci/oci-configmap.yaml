@@ -1,0 +1,82 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: main-configmap
+  namespace: thunder-observability-agent
+data:
+  main.properties: |
+    log_collection_delay_min=0 
+    cron_job_frequency_min=1
+    http_ssl_verify=False
+    http_connection_timeout_sec=15
+    max_threads=2000
+    config_path=/usr/toaenv/thunder-observability-agent/config.json
+    thunder_credentials_path=/root/.thunder/credentials
+    oci_credentials_path=/root/.oci/credentials
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-configmap
+  namespace: thunder-observability-agent
+data:
+  config.json: |
+    {
+      "oci_provider": 0,
+      "oci_metric": 0,
+      "oci_compartment_id":"ocid1.compartment.oc1..xxxx",
+      "oci_cpu": 1,
+      "oci_memory": 1,
+      "oci_disk": 1,
+      "oci_throughput": 1,
+      "oci_interfaces": 1,
+      "oci_cps": 1,
+      "oci_tps": 1,
+      "oci_server_down_count": 1,
+      "oci_server_down_percentage": 1,
+      "oci_ssl_cert": 1,
+      "oci_server_error": 1,
+      "oci_sessions": 1,
+      "oci_packet_rate": 1,
+      "oci_packet_drop": 1,
+      "oci_log": 0,
+      "oci_log_id": "ocid1.log.oc1.xxxx.xxxx"
+    }
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logging-configmap
+  namespace: thunder-observability-agent
+data:
+  logging.conf: |
+    [loggers]
+    keys=root
+
+    [handlers]
+    keys=hand01
+
+    [formatters]
+    keys=form01
+
+    [logger_root]
+    level=INFO
+    handlers=hand01
+
+    [handler_hand01]
+    class=logging.handlers.RotatingFileHandler
+
+    # ERROR, INFO
+    level=INFO
+    formatter=form01
+
+    # logFilePath, append, maxBytes, backupCount
+    args=('/var/log/thunder-observability-agent/agent.log', 'a', 5000000, 100)
+
+    # (%(filename)s:%(lineno)d)
+    [formatter_form01]
+    format=%(asctime)s - %(levelname)s - %(message)s
+    datefmt=
+    style=%
+    validate=True
+    class=logging.Formatter

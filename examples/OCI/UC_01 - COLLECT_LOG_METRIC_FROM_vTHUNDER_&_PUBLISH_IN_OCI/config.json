@@ -1,0 +1,22 @@
+{
+    "oci_provider": 1,
+    "oci_metric": 1,
+    "oci_cpu": 1,
+    "oci_memory": 1,
+    "oci_compartment_id":"ocid1.compartment.oc1..amlkjytrnpczhiafkgum6yjjhltv6frnn3wb6y3442fr5tc3j4kljhgfsq",
+    "oci_disk": 1,
+    "oci_throughput": 1,
+    "oci_interfaces": 1,
+    "oci_cps": 1,
+    "oci_tps": 1,
+    "oci_server_down_count": 1,
+    "oci_server_down_percentage": 1,
+    "oci_ssl_cert": 1,
+    "oci_server_error": 1,
+    "oci_sessions": 1,
+    "oci_packet_rate": 1,
+    "oci_packet_drop": 1,
+    "oci_log": 1,
+    "oci_log_id": "ocid1.log.oc1.phx.amlkjytrnpczhiafkgfrfvuboum6yjjhltv6frnn3wb6y3442fr5tc3j4sq"
+  }
+  

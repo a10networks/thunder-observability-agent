@@ -35,5 +35,16 @@
 	UC_01	: Collect metrics and logs from thunder/thunders and publish it into splunk.
 	UC_02	: Collect only logs of thunder/thunders and publish it into splunk.
 	UC_03	: Collect only metrics of thunder/thunders and publish it into splunk.
+
+	Google Cloud Platform (GCP):
+	UC_01	: Collect metrics and logs from thunder/thunders and publish it into gcp.
+	UC_02	: Collect only logs of thunder/thunders and publish it into gcp.
+	UC_03	: Collect only metrics of thunder/thunders and publish it into gcp.
+
+	Oracle Cloud Infrastructure (OCI):
+	UC_01	: Collect metrics and logs from thunder/thunders and publish it into oci.
+	UC_02	: Collect only logs of thunder/thunders and publish it into oci.
+	UC_03	: Collect only metrics of thunder/thunders and publish it into oci.
+
 	
-	More detailed description and sample configuration file, please check [/AWS, /AZURE, /VMWARE, /ELASTICSEARCH, /PROMETHEUS, /SPLUNK] directory.
+	More detailed description and sample configuration file, please check [/AWS, /AZURE, /VMWARE, /ELASTICSEARCH, /PROMETHEUS, /SPLUNK, /GCP, /OCI] directory.
